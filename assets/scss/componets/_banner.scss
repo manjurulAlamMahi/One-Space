@@ -1,0 +1,133 @@
+/* ============================== Banner Part Start =================================== */
+#banner{
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    height: 1000px;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    .banner_text{
+        h1{
+            @include text(56px,700,#000);
+            font-family: 'Axiforma-ExtraBold', sans-serif;
+            line-height: 62px;
+        }
+    }
+    .banner_img{
+        img{
+            border-radius: 375px 375px 0px 0px;
+            position: relative;
+            z-index: 3;
+        }
+        position: relative;
+        z-index: 3;
+        &::after{
+            @include af_bf();
+            width: 100%;
+            height: 100%;
+            top: -15px;
+            left: -15px;
+            background: linear-gradient( to top,rgba(167, 50, 122, 1) 0% , rgba(59, 144, 251, 1) 100%);
+            border-radius: 375px 375px 0px 0px;
+            z-index: 1;
+        }
+        &::before{
+            @include af_bf();
+            width: 99%;
+            height: 100%;
+            top: -12px;
+            left: -12px;
+            background: #fff;
+            border-radius: 375px 375px 0px 0px;
+            z-index: 2;
+        }
+    }
+    .banner_navbar{
+        position: absolute;
+        bottom: 230px;
+        left: 120px;
+        width: 100%;
+        z-index: 4;
+        .banner_menu{
+            border-radius: 5px;
+            background: rgba(243, 243, 243, 0.6);
+            backdrop-filter: blur(17px);
+            padding: 22px;
+            display: flex;
+            width: 53%;
+            li{
+                margin: 0 44px;
+                a{
+                    padding: 14px 28px;
+                    @include text(18px,400,#989898);
+                    font-family: 'CeraPro-Regular', sans-serif;
+                    line-height: 24px;
+                    border-radius: 5px;
+                    @include transition();
+                    i{
+                        padding-right: 10px;
+                    }
+                    &:hover{
+                        background: $hover;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .banner_side_img{
+        position: relative;
+        .circle-1{
+            position: absolute;
+            top: -50px;
+            left: -130px;
+            z-index: 4;
+            .ovrly_circle{
+                position:absolute;
+                bottom:0;
+                right:0;
+                overflow:hidden;
+                margin:auto;
+                // animation: circle 6s linear infinite;
+            }
+        }
+        .circle-3{
+            position: absolute;
+            top: 220px;
+            left: -25px;
+
+        }
+        .ovrly_text{
+            width: 475px;
+            height: 70px;
+            position: absolute;
+            top: 400px;
+            left: -220px;
+            h6{
+                @include text(52px,700,#000);
+                line-height: 68px;
+                opacity: 0.1;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    .shape1,
+    .shape2{
+        position: absolute;
+        width: 900px;
+        height: 100%;
+        border-radius: 50%;
+        backdrop-filter: blur(192.01px);
+        z-index: -1;
+    }
+    .shape1{
+        top: -220px;
+        left: -200px;
+    }
+    .shape2{
+        top: -220px;
+        right: -200px;
+    }
+}
+/* ============================== Banner Part End  =================================== */

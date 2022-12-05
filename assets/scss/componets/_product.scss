@@ -1,0 +1,116 @@
+/* ============================== Product Part Start =================================== */
+#product{
+    padding-bottom: 120px;
+    .product_header{
+        padding-bottom: 50px;
+        h2{
+            @include text(50px,600,$hover);
+            line-height: 72px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        a{
+            @include text(17px,400,#3D3D3F);
+            line-height: 26px;
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            z-index: 1;
+            i{
+                padding-left: 23px;
+                color: $hover;
+                position: relative;
+                z-index: 1;
+                @include transition();
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 34px;
+                height: 19px;
+                right: -40px;
+                top: 2px;
+                background: #F4F6F6;
+                box-shadow: 0px 100px 80px rgba(36, 77, 77, 0.1), 0px 64.8148px 46.8519px rgba(36, 77, 77, 0.0759259), 0px 38.5185px 25.4815px rgba(36, 77, 77, 0.0607407), 0px 20px 13px rgba(36, 77, 77, 0.05), 0px 8.14815px 6.51852px rgba(36, 77, 77, 0.0392593), 0px 1.85185px 3.14815px rgba(36, 77, 77, 0.0240741);
+                border-radius: 5px;
+                z-index: -1;
+                opacity: 0;
+                @include transition();
+            }
+            &:hover{
+                &::after{
+                    right: 0;
+                    opacity: 100%;
+                }
+            }
+        }
+    }
+    .our_products{
+        .product_content{
+            .product_menu{
+                display: flex;
+                justify-content: center;
+                li{
+                    margin-right: 60px;
+                    @include text(18px,400,#A9A7A6);
+                    cursor: pointer;
+                    @include transition();
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &:hover{
+                        color: $text;
+                    }
+                }
+            }
+            .product_list{
+                .product_item{
+                    .product_item_contexts{
+                        margin-top: 180px;
+                        background: rgba(36, 77, 77, 0.05);
+                        padding: 40px 65px 180px 65px;
+                        position: relative;
+                        h6{
+                            font-weight: 400;
+                            font-size: 26px;
+                            line-height: 33px;
+                            color: #3D3D3F;
+                            padding-bottom: 25px;
+                        }
+                        span{
+                            font-weight: 400;
+                            font-size: 19px;
+                            line-height: 24px;
+                            color: #3D3D3F;
+                            padding-right: 45px;
+                        }
+                        del{
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 19px;
+                            color: #A9A7A6;
+                        }
+                        a{
+                            position: absolute;
+                            top: -20px;
+                            right: 20px;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background: #D6C4B8;
+                            color: #FFF;
+                            text-align: center;
+                            line-height: 40px;
+                            font-size: 14px;
+                        }
+                        .ovrly{
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: 180px;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+/* ============================== Product Part End  =================================== */

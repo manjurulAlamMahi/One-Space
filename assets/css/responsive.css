@@ -1,0 +1,799 @@
+@media(min-width:1400px) {}
+
+@media(min-width:1200px) and (max-width:1399.98px) {}
+
+@media(min-width:992px) and (max-width:1100.98px) {
+    #main_menu .search_bar .navbar-form-search .search-form-container {
+        width: 220px;
+    }
+    #banner .banner_content .banner_text h1 {
+        font-size: 40px;
+    }
+    #banner .banner_content .banner_text {
+        top: 80%;
+        left: -30px;
+        width: 485px;
+        padding: 50px 50px;
+    }
+    #banner .banner_slider .slick-dots {
+        position: absolute;
+        right: 50%;
+        bottom: -45px;
+        top: inherit;
+    }
+    #banner .banner_slider .slick-dots li::before{
+        top: 0;
+        right: -75px;
+    }
+    #banner .banner_slider .slick-dots li::after {
+        right: inherit;
+        top: 15px;
+        width: 50px;
+        height: 1px;
+        left: 15px;
+    }
+    #banner .banner_slider .banner_up,
+    #banner .banner_slider .banner_down {
+        right: inherit;
+        bottom: -40px;
+        top: inherit;
+    }
+    #banner .banner_slider .banner_up{
+        left: 10%;
+        transform: rotate(270deg);
+    }
+    #banner .banner_slider .banner_down{
+        left: 20%;
+        transform: rotate(270deg);
+    }
+    #product .product_header a::after {
+        right: 0;
+    }
+    #testimonial .testi_slider_content .testi_down, 
+    #testimonial .testi_slider_content .testi_up {
+        bottom: 30px;
+    }
+    #footer .footer_top a {
+        margin: 0 4px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991.98px) {
+    /* ================================ Nav Css ================================== */     
+    #main_menu .menu_part ul li {
+        margin-right: 40px;
+    }
+    #main_menu .logo {
+        width: 20%;
+    }
+    #main_menu .menu_part {
+        width: 65%;
+    }
+    #main_menu .search_bar .navbar-form-search .search-form-container {
+        width: 100px;
+    }
+    /* ================================ Nav Css ================================== */
+
+    /* ================================ Banner Css ================================== */
+    #banner{
+        background: url(../images/banner.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        padding-top: 30px;
+    }
+    #banner::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+    #banner .banner_slider {
+        display: none;
+    }
+    #banner .banner_content {
+    position: relative;
+    padding: 0 0 0 0;
+    background: inherit;
+    z-index: 2;
+    }
+    #banner .banner_content .banner_img_dots {
+        display: none;
+    }
+    #banner .banner_content .banner_text {
+        position: inherit;
+        top: inherit;
+        left: inherit;
+        width: inherit;
+        padding: 25px 0 75px 0;
+        text-align: center;
+        background: inherit;
+        backdrop-filter: inherit;
+    }
+    #banner .banner_content .banner_text h1 {
+        line-height: 46px;
+        font-size: 32px;
+        padding-bottom: 30px;
+        color: #fff;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #244d4d;
+    }
+    #banner .backtodown {
+        bottom: -30px;
+        right: 10px;
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 0.4);
+        line-height: 112px;
+    }
+    #banner .banner_content .banner_text p {
+        line-height: 40px;
+        font-size: 18px;
+        color: #eee;
+    }
+    /* ================================ Banner Css ================================== */
+
+    /* ================================ Clients Css ================================== */
+    #client .client_slider .slick-list .slick-track .slick-slide{
+        margin: 0 15px;
+    }
+    /* ================================ Clients Css ================================== */
+
+    /* ================================ Service Css ================================== */
+    #service {
+        padding: 60px 0 0px 0;
+    }
+    #service .service_row {
+        flex-wrap: wrap;
+    }
+    #service .service_row .service_col {
+        width: 50% !important;
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+    #service .service_row .service_col .service_content.service_deal h2 {
+        font-size: 46px;
+    }
+    /* ================================ Service Css ================================== */
+
+    /* ================================ About Us Css ================================== */
+    #about_us {
+        padding: 40px 0 50px 0;
+    }
+    #about_us .about_header {
+        padding-bottom: 25px;
+    }
+    #about_us .about_header p {
+        padding-right: 0;
+    }
+    #about_us .about_header a {
+        margin-top: 20px;
+    }
+    #about_us .we_do .we_do_content {
+        padding-bottom: 40px;
+    }
+    /* ================================ About Us Css ================================== */
+
+    /* ================================ Product Css ================================== */
+    #product .product_header h2 {
+        font-size: 35px;
+    }
+    #product .our_products .product_content .product_menu li {
+        margin-right: 30px;
+    }
+    #product .our_products .product_content .product_list .product_item .product_item_contexts.product_item_contexts_fitst_item {
+        margin-top: 80px;
+    }
+    #product .product_header a::after {
+        right: 0;
+    }
+    /* ================================ Product Css ================================== */
+
+    /* ================================ Testimonial Css ================================== */
+    #testimonial .testi_header .testi_header_left .circle2 img {
+        width: 100px;
+    }
+    #testimonial .testi_header .testi_header_left .circle1 img {
+        width: 60px;
+    }
+    #testimonial .testi_header .testi_header_center h4 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    #testimonial .testi_header .testi_header_right {
+        padding-top: 20px;
+    }
+    #testimonial .testi_slider_content .testi_slider_item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_info {
+        padding-top: 30px;
+        width: 100%;
+    }
+    #testimonial .testi_header {
+        padding-bottom: 40px;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_img .star {
+        top: 0;
+        left: 0;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_img .shape {
+        display: none;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_info p {
+        padding-right: 0;
+    }
+    #testimonial .testi_slider_content .testi_down, 
+    #testimonial .testi_slider_content .testi_up {
+        bottom: 20px;
+    }
+    #testimonial .testi_slider_content .testi_up {
+        left: 20%;
+    }
+    /* ================================ Testimonial Css ================================== */
+
+    /* ================================ Footer Css ================================== */
+    #footer {
+        padding: 80px 0 105px 0;
+    }
+    #footer .footer_top h2 {
+        font-size: 25px;
+    }
+    #footer .footer_top a {
+        padding: 20px 25px;
+        font-size: 16px;
+        margin: 10px 7px 0 7px;
+    }
+    #footer .footer_bottom .fb_content{
+        padding-top: 20px;
+    }  
+    #footer .footer_bottom .fb_content h6 {
+        font-size: 18px;
+        font-weight: 700;
+    } 
+    #footer .backtotop {
+        bottom: 10px;
+        right: 10px;
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 0.4);
+        line-height: 112px;
+    }
+    /* ================================ Footer Css ================================== */
+}
+
+@media(min-width:576px) and (max-width:767.98px) {
+    /* ================================ Nav Css ================================== */
+    #main_menu .search_bar .navbar-form-search .search-form-container {
+        width: 160px;
+    }     
+    #main_menu .mobile_menu_button{
+        display: inline-block;
+        background: none;
+        color: #3D3D3F;
+        border: none;
+    }
+    #main_menu .mobile_menu_button:focus{
+        box-shadow: none;
+        color: #244D4D;
+    }
+    #main_menu .nav_offcanvas{
+        width: 250px !important;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_header a{
+        font-size: 26px;
+        font-weight: 700;
+        color: #244D4D;
+        line-height: 37px;
+        letter-spacing: -0.03em;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_header button:focus{
+        box-shadow: none;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body{
+        text-align: center;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body ul li{
+        margin: 5px 0;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body ul li a{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        color: #242424;
+        position: relative;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body ul li a::before {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 8px;
+        width: 100%;
+        height: 3px;
+        background: #244D4D;
+        transform-origin: right center;
+        transform: scale(0, 1);
+        transition: transform 0.4s ease;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body ul li a:hover {
+        color: #244D4D;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body ul li a:hover::before {
+        transform-origin: left center;
+        transform: scale(1, 1);
+    }
+    /* ================================ Nav Css ================================== */
+
+    /* ================================ Banner Css ================================== */
+    #banner{
+        background: url(../images/banner.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        padding-top: 30px;
+    }
+    #banner::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+    #banner .banner_slider {
+        display: none;
+    }
+    #banner .banner_content {
+    position: relative;
+    padding: 0 0 0 0;
+    background: inherit;
+    z-index: 2;
+    }
+    #banner .banner_content .banner_img_dots {
+        display: none;
+    }
+    #banner .banner_content .banner_text {
+        position: inherit;
+        top: inherit;
+        left: inherit;
+        width: inherit;
+        padding: 25px 0 75px 0;
+        text-align: center;
+        background: inherit;
+        backdrop-filter: inherit;
+    }
+    #banner .banner_content .banner_text h1 {
+        line-height: 46px;
+        font-size: 32px;
+        padding-bottom: 30px;
+        color: #fff;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #244d4d;
+    }
+    #banner .backtodown {
+        bottom: -30px;
+        right: 10px;
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 0.4);
+        line-height: 112px;
+    }
+    #banner .banner_content .banner_text p {
+        line-height: 40px;
+        font-size: 18px;
+        color: #eee;
+    }
+    /* ================================ Banner Css ================================== */
+
+    /* ================================ Clients Css ================================== */
+    #client .client_slider .slick-list .slick-track .slick-slide{
+        margin: 0 15px;
+    }
+    /* ================================ Clients Css ================================== */
+
+    /* ================================ Service Css ================================== */
+    #service {
+        padding: 60px 0 0px 0;
+    }
+    #service .service_row {
+        flex-wrap: wrap;
+    }
+    #service .service_row .service_col {
+        width: 100% !important;
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+    #service .service_row .service_col .service_content.service_deal h2 {
+        font-size: 46px;
+    }
+    /* ================================ Service Css ================================== */
+
+    /* ================================ About Us Css ================================== */
+    #about_us {
+        padding: 40px 0 50px 0;
+    }
+    #about_us .about_header {
+        padding-bottom: 25px;
+    }
+    #about_us .about_header p {
+        padding-right: 0;
+    }
+    #about_us .about_header a {
+        margin-top: 20px;
+    }
+    #about_us .we_do .we_do_content {
+        padding-bottom: 40px;
+    }
+    /* ================================ About Us Css ================================== */
+
+    /* ================================ Product Css ================================== */
+    #product .product_header h2 {
+        font-size: 35px;
+    }
+    #product .our_products .product_content .product_menu li {
+        margin-right: 30px;
+    }
+    #product .our_products .product_content .product_list .product_item .product_item_contexts.product_item_contexts_fitst_item {
+        margin-top: 80px;
+    }
+    #product .product_header a::after {
+        right: 0;
+    }
+    /* ================================ Product Css ================================== */
+
+    /* ================================ Testimonial Css ================================== */
+    #testimonial .testi_header .testi_header_left .circle2 img {
+        width: 100px;
+    }
+    #testimonial .testi_header .testi_header_left .circle1 img {
+        width: 60px;
+    }
+    #testimonial .testi_header .testi_header_center h4 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    #testimonial .testi_header .testi_header_right {
+        padding-top: 20px;
+    }
+    #testimonial .testi_slider_content .testi_slider_item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_info {
+        padding-top: 30px;
+        width: 100%;
+    }
+    #testimonial .testi_header {
+        padding-bottom: 40px;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_img .star {
+        top: 0;
+        left: 0;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_img .shape {
+        display: none;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_info p {
+        padding-right: 0;
+    }
+    #testimonial .testi_slider_content .testi_down, 
+    #testimonial .testi_slider_content .testi_up {
+        bottom: 20px;
+    }
+    #testimonial .testi_slider_content .testi_up {
+        left: 20%;
+    }
+    /* ================================ Testimonial Css ================================== */
+
+    /* ================================ Footer Css ================================== */
+    #footer {
+        padding: 80px 0 105px 0;
+    }
+    #footer .footer_top h2 {
+        font-size: 25px;
+    }
+    #footer .footer_top a {
+        padding: 20px 25px;
+        font-size: 16px;
+        margin: 10px 7px 0 7px;
+    }
+    #footer .footer_bottom .fb_content{
+        padding-top: 20px;
+    }  
+    #footer .footer_bottom .fb_content h6 {
+        font-size: 18px;
+        font-weight: 700;
+    } 
+    #footer .backtotop {
+        bottom: 10px;
+        right: 10px;
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 0.4);
+        line-height: 112px;
+    }
+    /* ================================ Footer Css ================================== */
+}
+
+@media(max-width:575.98px) {
+    /* ================================ Nav Css ================================== */
+    #main_menu .mobile_menu_button{
+        display: inline-block;
+        background: none;
+        color: #3D3D3F;
+        border: none;
+    }
+    #main_menu .mobile_menu_button:focus{
+        box-shadow: none;
+        color: #244D4D;
+    }
+    #main_menu .nav_offcanvas{
+        width: 250px !important;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_header a{
+        font-size: 26px;
+        font-weight: 700;
+        color: #244D4D;
+        line-height: 37px;
+        letter-spacing: -0.03em;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_header button:focus{
+        box-shadow: none;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body{
+        text-align: center;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body ul li{
+        margin: 5px 0;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body ul li a{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        color: #242424;
+        position: relative;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body ul li a::before {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 8px;
+        width: 100%;
+        height: 3px;
+        background: #244D4D;
+        transform-origin: right center;
+        transform: scale(0, 1);
+        transition: transform 0.4s ease;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body ul li a:hover {
+        color: #244D4D;
+    }
+    #main_menu .nav_offcanvas .mobile_menu_body ul li a:hover::before {
+        transform-origin: left center;
+        transform: scale(1, 1);
+    }
+    /* ================================ Nav Css ================================== */
+
+    /* ================================ Banner Css ================================== */
+    #banner{
+        background: url(../images/banner.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        padding-top: 30px;
+    }
+    #banner::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+    #banner .banner_slider {
+        display: none;
+    }
+    #banner .banner_content {
+       position: relative;
+       padding: 0 0 0 0;
+       background: inherit;
+       z-index: 2;
+    }
+    #banner .banner_content .banner_img_dots {
+        display: none;
+    }
+    #banner .banner_content .banner_text {
+        position: inherit;
+        top: inherit;
+        left: inherit;
+        width: inherit;
+        padding: 25px 0 75px 0;
+        text-align: center;
+        background: inherit;
+        backdrop-filter: inherit;
+    }
+    #banner .banner_content .banner_text h1 {
+        line-height: 46px;
+        font-size: 32px;
+        padding-bottom: 30px;
+        color: #fff;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #244d4d;
+    }
+    #banner .backtodown {
+        bottom: -30px;
+        right: 10px;
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 0.4);
+        line-height: 112px;
+    }
+    #banner .banner_content .banner_text p {
+        line-height: 40px;
+        font-size: 18px;
+        color: #eee;
+    }
+    /* ================================ Banner Css ================================== */
+
+    /* ================================ Clients Css ================================== */
+    #client .client_slider .slick-list .slick-track .slick-slide{
+        margin: 0 15px;
+    }
+    /* ================================ Clients Css ================================== */
+
+    /* ================================ Service Css ================================== */
+    #service {
+        padding: 60px 0 0px 0;
+    }
+    #service .service_row {
+        flex-wrap: wrap;
+    }
+    #service .service_row .service_col {
+        width: 100% !important;
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+    #service .service_row .service_col .service_content.service_deal h2 {
+        font-size: 46px;
+    }
+    /* ================================ Service Css ================================== */
+
+    /* ================================ About Us Css ================================== */
+    #about_us {
+        padding: 40px 0 50px 0;
+    }
+    #about_us .about_header {
+        padding-bottom: 25px;
+    }
+    #about_us .about_header p {
+        padding-right: 0;
+    }
+    #about_us .about_header a {
+        margin-top: 20px;
+    }
+    #about_us .we_do .we_do_content {
+        padding-bottom: 40px;
+    }
+    /* ================================ About Us Css ================================== */
+
+    /* ================================ Product Css ================================== */
+    #product .product_header h2 {
+        font-size: 35px;
+    }
+    #product .our_products .product_content .product_menu li {
+        margin-right: 30px;
+    }
+    #product .our_products .product_content .product_list .product_item .product_item_contexts.product_item_contexts_fitst_item {
+        margin-top: 80px;
+    }
+    #product .product_header a::after {
+        right: 0;
+    }
+    /* ================================ Product Css ================================== */
+
+    /* ================================ Testimonial Css ================================== */
+    #testimonial .testi_header .testi_header_left .circle2 img {
+        width: 100px;
+    }
+    #testimonial .testi_header .testi_header_left .circle1 img {
+        width: 60px;
+    }
+    #testimonial .testi_header .testi_header_center h4 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    #testimonial .testi_header .testi_header_right {
+        padding-top: 20px;
+    }
+    #testimonial .testi_slider_content .testi_slider_item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_info {
+        padding-top: 30px;
+        width: 100%;
+    }
+    #testimonial .testi_header {
+        padding-bottom: 40px;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_img .star {
+        top: 0;
+        left: 0;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_img .shape {
+        display: none;
+    }
+    #testimonial .testi_slider_content .testi_slider_item .testi_client_info p {
+        padding-right: 0;
+    }
+    #testimonial .testi_slider_content .testi_down, 
+    #testimonial .testi_slider_content .testi_up {
+        bottom: 20px;
+    }
+    #testimonial .testi_slider_content .testi_up {
+        left: 20%;
+    }
+    /* ================================ Testimonial Css ================================== */
+
+    /* ================================ Footer Css ================================== */
+    #footer {
+        padding: 80px 0 105px 0;
+    }
+    #footer .footer_top h2 {
+        font-size: 25px;
+    }
+    #footer .footer_top a {
+        padding: 20px 25px;
+        font-size: 16px;
+        margin: 10px 7px 0 7px;
+    }
+    #footer .footer_bottom .fb_content{
+        padding-top: 20px;
+    }  
+    #footer .footer_bottom .fb_content h6 {
+        font-size: 18px;
+        font-weight: 700;
+    } 
+    #footer .backtotop {
+        bottom: 10px;
+        right: 10px;
+        width: 90px;
+        height: 90px;
+        background: rgba(255, 255, 255, 0.4);
+        line-height: 112px;
+    }
+    /* ================================ Footer Css ================================== */
+}
